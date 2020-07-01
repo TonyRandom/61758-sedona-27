@@ -1,0 +1,16 @@
+body {
+    background-image: url("/img/background.jpg.jpg");
+ }
+
+.logo {
+    background-image: url("img/logo.png");
+    position: absolute;
+    left: 570px;
+    top: -1px;
+    width: 140px;
+    height: 72px;
+    z-index: 88;
+  }
+
+
+  
