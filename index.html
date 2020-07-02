@@ -9,11 +9,11 @@
     <header>
       <nav>
         <a class="logo" href="#"><img src="img/logo.svg" alt="Логотип"></a>
-        <ul>
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+        <ul class="navigation">
+          <li><a  href="#">Информация</a></li>
+          <li><a  href="#">Фото и видео</a></li>
+          <li><a   href="#">Карта штата</a></li>
+          <li><a  href="#">Гостиницы</a></li>
         </ul>
 
 
@@ -93,6 +93,24 @@
       <p>Укажите преполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
+      <form id="appointment-in" class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+
+<p> <label for="appointment-in"> Дата заезда: <input id="appointment-in" type="date" name="date-in" value="" placeholder="24 апреля 2020">  </label> </p> 
+
+  <p> <label for="appointment-out"> Дата выезда: <input type="date" name="date-out" value="" placeholder="26 апреля 2020"> </label> </p> 
+
+<p> <label for="appointment-parents"> Взрослые: <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+  <input id="appointment-parents" name="parents" type="number" min="0" max="100" value="2" readonly>
+  <button type="button" onclick="this.previousElementSibling.stepUp()">+</button> </label> </p>
+
+  <p> <label for="appointment-children"> Дети: <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+    <input id="appointment-children" name="children" type="number" min="0" max="100" value="0" readonly>
+    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button></label></p>
+
+    <button type="submit"> Найти </button>
+
+</form>
+
       <p><img src="" alt="карта"></p>
     </section>
 
