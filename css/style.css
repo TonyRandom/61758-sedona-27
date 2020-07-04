@@ -43,3 +43,10 @@
   color: #000000;
 } */
  
+
+
+.star {
+  background-image:
+    url(img\star.svg);
+}
+
