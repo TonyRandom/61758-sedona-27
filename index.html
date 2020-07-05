@@ -3,42 +3,52 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <nav>
-        <a class="logo" href="#"><img src="img/logo.svg" alt="Логотип"></a>
-        <ul class="navigation">
+      <nav class="main-navigation">
+        <a class="logo" href="#"><img src="img/logo.svg" width="140px"  height="72px"  alt="Логотип"></a>
+        <ul class="site-navigation">
           <li><a  href="#">Информация</a></li>
           <li><a  href="#">Фото и видео</a></li>
           <li><a   href="#">Карта штата</a></li>
           <li><a  href="#">Гостиницы</a></li>
         </ul>
 
-
+               
 
       </nav>
 
     </header>
     <main>
-     <img src="welcome.svg" alt="Welcome to the georgeous Sedona">
-    
+      <h1 class="visually-hidden">Седона</h1>
+      <div class="welcome-logo"><img src="img/welcome-logo.png" width="459px" height="353px" alt="Welcome to the georgeous Sedona"> </div>
+     
+      <div class="polygon">
+        <img src="img/polygon.svg"  alt="">
+        <img src="img/polygon-2.svg"  alt="">
+       
+        
+      </div>
 
      <section>
+
      <h2 class="visually-hidden">Преимущества</h2>
      <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-     <ul>
-       <li>
+     
+     <div class="feature-1">
          <h3>Настоящий городок</h3>
          <p>— №1 —</p>
          <p>Настоящий городок  — №1 —  Седона — не аттракцион для туристов, <br>
             там течет своя жизнь</p>
-            <img src="№" alt="преимущество 1">
-       </li>
+            <img src="/img/feature-1.jpg" alt="преимущество 1">
+          </div>
 
-       <ul>
+      <div class="features"> <ul>
          <li><img src="img/home.svg" alt="домик">
           <h3>Жилье</h3>
         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -53,7 +63,7 @@
         </li>
 
        </ul>
-       
+      </div>
       <li>
           <h3>Там есть мост дьявола</h3>
           <p>— №2 —</p>
