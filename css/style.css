@@ -2,13 +2,12 @@ body {
   font-family: 'PT Sans', Arial, sans-serif;
   margin: 0;
   padding: 0;
-
+  width: 1200px;
   color: black;
   font-size: 14px;
+  margin: 0 auto;
 
-  background-image: url("../img/background.jpg.jpg");
-background-position: top center;
-background-repeat: no-repeat;
+ 
 
  }
 
@@ -25,10 +24,20 @@ li {
   list-style: none;
 }
 
+.background-photo {
+  background-image: url("../img/background.jpg.jpg");
+  
+  min-height: 509px;
+
+  background-repeat: no-repeat;
+
+}
 
 .main-navigation {
   background-color: white;
   text-align: center;
+  display: flex;
+  justify-content: space-around
   
 }
 .main-navigation a {
@@ -36,32 +45,68 @@ li {
   
 }
 
-.site-navigation a {
+.main-navigation a {
   color: black;
   font: inherit;
+  font-size: 14px;
+line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+
+.welcome-logo img {
+  display: flex;
+ align-items: center;
+  margin: 0 auto;
+}
+
+
+.main-title h3 {
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
-text-align: 26px;
+    font-weight: 700;
+
+
+}
+.main-title p
+{
+  font-size: 14px;
+  line-height: 26px;
+    font-weight: 700;
+
+
 }
 
 
 
-
-.feature-1 {
+.feature-blue {
 
   background-color: #81b3d2;
+  
+  display: flex;
  
 }
-.feature-1 h3 { font-size: 21px;
+.feature-blue h3 { font-size: 21px;
   line-height: 21px;}
 
-.features {
+.features-white {
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.features-grey {
+
+  background-color: #eeeeee;
+  display: flex;
 }
 
 
-
+.hotel-search {
+  background-color: white;
+}
 
 
 .visually-hidden {
@@ -72,3 +117,95 @@ text-align: 26px;
   margin: -1px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ФОРМА */
+
+
+.search-form {
+border: 2px solid black;
+
+}
+.search-form-title {
+  border: 2px solid black;
+  background-color: #766357;
+  
+  }
+.search-form-button {
+  border: none;
+  color: white;
+  background-color: #81b3d2;
+  text-align: center;
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+
+
+
+.map img {
+
+}
+
+
+/* ФУТЕР */
+
+.footer-main {
+display: flex;
+justify-content: space-between;
+margin: auto;
+
+}
+
+
+
+
+.contacts {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.social {
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-button {
+  padding: 10px;
+  background-color: #81b3d2;
+  margin: 10px;
+   /* padding: 10px; */
+ 
+  }
+  
+
+
+.html-academy-logo {
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.html-academy-text {
+  font-size: 14px;
+  line-height: 26px;
+  }
+  

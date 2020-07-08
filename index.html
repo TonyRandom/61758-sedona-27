@@ -8,69 +8,69 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
-      <nav class="main-navigation">
-        <a class="logo" href="#"><img src="img/logo.svg" width="140px"  height="72px"  alt="Логотип"></a>
-        <ul class="site-navigation">
-          <li><a  href="#">Информация</a></li>
-          <li><a  href="#">Фото и видео</a></li>
-          <li><a   href="#">Карта штата</a></li>
-          <li><a  href="#">Гостиницы</a></li>
-        </ul>
-
-               
-
-      </nav>
+  
+  <header>
+    <nav class="main-navigation">
+      <div><a  href="#">Информация</a></div>
+      <div><a  href="#">Фото и видео</a></div>
+      <div><a class="logo" href="#"><img src="img/logo.svg" width="140px"  height="72px"  alt="Логотип"></a> </div>
+      <div><a   href="#">Карта штата</a></div>
+      <div><a  href="#">Гостиницы</a></div>
+    </nav>
 
     </header>
     <main>
+    <div class="background-photo">
       <h1 class="visually-hidden">Седона</h1>
       <div class="welcome-logo"><img src="img/welcome-logo.png" width="459px" height="353px" alt="Welcome to the georgeous Sedona"> </div>
-     
-      <div class="polygon">
-        <img src="img/polygon.svg"  alt="">
-        <img src="img/polygon-2.svg"  alt="">
-       
+    </div>
+<div class="polygon"> 
+  <img class="polygon-item-1" src="./img/polygon.svg"  alt="">
+<!--   <img class="polygon-item-2" src="./img/polygon-2.svg"  alt="">    -->
+</div>
         
-      </div>
 
-     <section>
+     
 
      <h2 class="visually-hidden">Преимущества</h2>
-     <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
-     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+     <div class="main-title"><h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3> 
+     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p> </div>
      
-     <div class="feature-1">
-         <h3>Настоящий городок</h3>
+     <div class="feature-blue">
+         <div class="feature-blue-text"><h3>Настоящий городок</h3> 
          <p>— №1 —</p>
          <p>Настоящий городок  — №1 —  Седона — не аттракцион для туристов, <br>
             там течет своя жизнь</p>
-            <img src="/img/feature-1.jpg" alt="преимущество 1">
+          </div>
+           <div class="feature-blue-img"> <img src="img/feature-1.jpg" width="800px" height="256px" alt="преимущество 1"> </div>
           </div>
 
-      <div class="features"> <ul>
-         <li><img src="img/home.svg" alt="домик">
+        
+          
+
+      <div class="features-white"> 
+        <div class="home"><img src="img/home.svg" alt="домик">
           <h3>Жилье</h3>
         <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li><img src="img/food.svg" alt="еда">
+      </div>
+        <div class="food"><img src="img/food.svg" alt="еда">
           <h3>Еда</h3>
-        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li><img src="img/gift.svg" alt="сувенир">
+        <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p> </div>
+      
+        <div class="gift"><img src="img/gift.svg" alt="сувенир">
           <h3>Сувениры</h3>
         <p>  Не только китайского, но и местного производства!</p>
-        </li>
-
-       </ul>
       </div>
-      <li>
-          <h3>Там есть мост дьявола</h3>
+      </div>
+      <div class="feature-blue">
+        <div class="feature-blue-img"><h3>Там есть мост дьявола</h3>
           <p>— №2 —</p>
           <p>Да, по нему можно пройти! Если конечно <br> 
-            вы осмелитесь</p>
-             <img src="№" alt="преимущество 2">
-      </li>
+            вы осмелитесь</p>  </div>
+            <div class="feature-blue-img"> <img src="img/most.jpg" width="800px" height="256px" alt="преимущество 2">  </div>
+            </div>
+     <div class="features-grey">
+            <ul >     
       <li>
         <h3>Небольшая площадь</h3>
         <p>— №3 —</p>
@@ -90,22 +90,22 @@
     <p>— №5 —</p>
     <p> Большинство едут в Гранд Каньон и толпится там</p>
     </li>
-
-
      </ul>
+    </div>
 
 
 
+    
 
-    </section>
-
-    <section>
-      <h2 class="to-hide">Поиск Гостиницы</h2>
+    <div class="hotel-search">
+      
       <p>Заинтересовались?</p>
       <p>Укажите преполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <form  class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+    </div>
+      <div class="search-form"><form  class="appointment-form" action="https://echo.htmlacademy.ru" method="POST">
+      <div class="search-form-title"> <h2>Поиск Гостиницы в Седоне</h2> </div>
 
 <p> <label for="appointment-in"> Дата заезда: <input id="appointment-in" type="date" name="date-in" value="" placeholder="24 апреля 2020">  </label> </p> 
 
@@ -119,30 +119,36 @@
     <input id="appointment-children" name="children" type="number" min="0" max="100" value="0" readonly>
     <button type="button" onclick="this.previousElementSibling.stepUp()">+</button></label></p>
 
-    <button type="submit"> Найти </button>
+    <button class="search-form-button" type="submit"> Найти </button>
 
-</form>
+</form> </div>
 
-      <p><img src="" alt="карта"></p>
-    </section>
 
+<div class="map" ><section>
+      <img src="./img/map.jpg" alt="карта">
+    </section>  </div>
 
     </main>
     
 
-  <footer>
-<p>#visitsedona</p>
-<p>тел: +7(495) 666-02-66</p>
+  <footer class="footer-main">
+    <div class="contacts">
+<div class="tag">#visitsedona</div>
+<div class="phone">тел: +7(495) 666-02-66</div>
+</div>
 
-
-    <div>
-    <ul>
-      <li> <a href="#"> <img src="#" alt="twitter"></a> </li>
-      <li><a href="#"><img src="#" alt="facebook"></a> </li>
-      <li>  <a href="#"><img src="#" alt="youtube"></a> </li>
+    <div >
+    <ul class="social">
+      <li> <a class="social-button" href="#"> <img class="twitter" src="img/twitter.svg" alt="twitter"></a> </li>
+      <li><a class="social-button" href="#"><img class="facebook" src="img/facebook.svg" alt="facebook"></a> </li>
+      <li>  <a class="social-button" href="#"><img class="youtube" src="img/youtube.svg" alt="youtube"></a> </li>
       </ul>
     </div>
-<p><a href="http://www.htmlacademy.ru"><img src="#" alt="лого академии"></a> </p>
+<div class="html-academy-logo">
+  <div class="html-academy-text"> Website by </div>  <a href="http://www.htmlacademy.ru">
+   <div class="html-academy-img"> <img src="img/html-academy-logo.svg.png" width="115px" height="41px" alt="лого академии"> </div>
+  </a> 
+</div>
 
   </footer>
 
