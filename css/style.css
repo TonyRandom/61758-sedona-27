@@ -24,6 +24,8 @@ li {
   list-style: none;
 }
 
+
+
 .background-photo {
   background-image: url("../img/background.jpg.jpg");
   
@@ -33,12 +35,23 @@ li {
 
 }
 
+
+        /* ХЭДЭР */
+
+
+
+
 .main-navigation {
   background-color: white;
   text-align: center;
+  height: 55px;
+ 
+  
+}
+.navigation {
+
   display: flex;
   justify-content: space-around
-  
 }
 .main-navigation a {
   text-decoration: none;
@@ -53,6 +66,10 @@ line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
 
+}
+
+.main-navigation .current-page {
+  color: #766357;
 }
 
 .welcome-logo img {
@@ -167,6 +184,7 @@ border: 2px solid black;
 .footer-main {
 display: flex;
 justify-content: space-between;
+align-items: center;
 margin: auto;
 
 }
@@ -209,3 +227,86 @@ margin: auto;
   line-height: 26px;
   }
   
+
+
+                    /* Каталог */
+
+
+                    /* Фильтр */
+
+
+.filter-section {
+  height: 200px;
+  display: flex;
+  /* align-items: center; */
+  align-content: space-between;
+  justify-content: space-between;
+
+}
+
+.filter-fieldset {
+ 
+}
+
+
+
+
+.filter-fieldset legend {
+font-size: 16px;
+line-height: 21px;
+text-transform: uppercase;
+
+}
+
+.filter-item {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  
+  }
+
+
+.filter-image {
+
+  background-image: url("../img/filter-background.jpg");
+}
+.filter-fieldset {
+  border: none;
+  color: #ffffff;
+}
+
+
+
+
+
+.search-results {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+
+.more-info-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding: 5px 10px;
+}
+
+
+.book-button {
+  color: #ffffff;
+  background-color: #766357;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+}
