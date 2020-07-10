@@ -445,35 +445,50 @@ margin: 0 auto;
                     /* Фильтр */
 
                     
-.filter {
-  margin-top: 30px;
-}                    
+                  
 
 .filter-section {
-  height: 200px;
+ 
   display: flex;
-  
-  align-content: space-between;
+  flex-direction: row ;
   justify-content: space-between;
-
+  align-content: center;
+  
+  
 
 }
 
-.filter-fieldset  {
-
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-border: 1px solid black;
-}
-
-.filter-fieldset ul {
+.filter-section fieldset {
+  border: none;
   padding: 0;
   margin: 0;
 }
 
+.container-flex-outer {
+  width: 500px;
+  display: flex;
 
-.filter-fieldset-item legend {
+  justify-content: space-around;
+
+}
+ 
+ .flex-outer {
+   height: 217px;
+   padding: 0;
+   margin: 0;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   
+   border: none;
+   color: #ffffff;
+
+   
+ }
+
+
+.flex-outer legend {
 font-size: 16px;
 line-height: 21px;
 text-transform: uppercase;
@@ -489,13 +504,23 @@ text-transform: uppercase;
   }
 
 
+.flex-price {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  
+
+}
+
+
+
+
 
 
   
-.filter-fieldset-item {
-  border: none;
-  color: #ffffff;
-}
+  
 
 
 .search-results-box {

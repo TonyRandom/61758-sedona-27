@@ -25,42 +25,58 @@
 
     </header>
 <main class="inner-main">
-  <div class="filter"> 
+  
   <form action="https://echo.htmlacademy.ru" method="GET">
             
     
-    <section class="filter-section">
-      <div class="filter-fieldset"><fieldset class="filter-fieldset-item" >
-        <legend>Инфраструктура</legend>
-        <ul>
-          <li class="filter-item"><input type="checkbox" id="pool" checked> <label for="pool"> Бассейн</label></li>
-          <li class="filter-item"><input type="checkbox" id="parking"> <label for="parking"> Парковка </label></li>
-          <li class="filter-item"><input type="checkbox" id="wifi"> <label for="wifi"> Wi-Fi</label></li>
-        </ul>
-      </fieldset>
-    </div>
-     <div class="filter-fieldset">  <fieldset class="filter-fieldset-item">
-        <legend>Тип жилья</legend>
-        <ul>
-          <li><input type="checkbox" id="hotel" checked> <label for="hotel"> Гостиница</label></li>
-          <li><input type="checkbox" id="motel" checked> <label for="motel"> Мотель</label></li>
-          <li><input type="checkbox" id="apartments" checked> <label for="apartments"> Аппартаменты</label></li>
-        </ul>
-      </fieldset>
-     </div> 
+<section class="filter-section">
+     
+  <div class="container-flex-outer">
+  <fieldset>         
+    <ul class="flex-outer">   
+      <li><legend>Инфраструктура</legend> </li>
+      <li><div class="filter-item"><input type="checkbox" id="pool" checked> <label for="pool"> Бассейн</label></div></li>
+      <li> <div class="filter-item"><input type="checkbox" id="parking"> <label for="parking"> Парковка </label></div></li>
+      <li><div class="filter-item"><input type="checkbox" id="wifi"> <label for="wifi"> Wi-Fi</label></div></li>
+    </ul>
+    </fieldset> 
+   
 
+    
+       <fieldset>
+        
+        <ul class="flex-outer">
+          <li><legend>Тип жилья</legend></li>
+          <li><div class="filter-item"><input type="checkbox" id="hotel" checked> <label for="hotel"> Гостиница</label></div></li>
+          <li> <div class="filter-item"><input type="checkbox" id="motel" checked> <label for="motel"> Мотель</label> </div></li>
+            <li>  <div class="filter-item"><input type="checkbox" id="apartments" checked> <label for="apartments"> Аппартаменты</label></div></li>
+        </ul>
+          
+      </fieldset>
+    </div>  
+    <div class="flex-price">
                 <fieldset>
-                    <legend>Стоимость в сутки (Р)</legend>
-                    <label>от<input type="number" name="min-price" value="0"></label>
-                    <label>до <input type="number" name="max-price" value="3000"></label>
-                    <input type="range">
-                    <input type="range">
+                  <ul class="flex-outer"></li>
+                    <li><label for="price-field">Стоимость в сутки (Р):</label></li>
+                      <li><input type="range" name="price" id="price-field" min="0" max="4000" step="100" value="3000" checked></li>
+                      <li><output name="priceoutput"></output></li>
+                      
+                      <li><button type="submit">Показать</button></li>
+                  </ul>
                 </fieldset>
+              </div>
     </section>  
   
                   
     </form>
-  </div>
+ 
+
+
+
+
+
+
+
 
 <section class="search-results-box">
   <div class="containter-search-results">
