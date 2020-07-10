@@ -30,7 +30,7 @@
 
 
 
-    <main>
+    <main class="index-main">
  
       
       <div class="welcome-logo"><img src="img/welcome-logo.png" width="458px" height="352px" alt="Welcome to the georgeous Sedona"> </div>
@@ -124,38 +124,36 @@
     </div>
 
 
-<div class="search-form">
-    <form  class="appointment-form" action="https://echo.htmlacademy.ru" method="POST"> 
-      <div class="search-form-title"> <h2>Поиск Гостиницы в Седоне</h2> </div> 
 
-  <div class="background-map">
-
-<p> <label for="appointment-in"> Дата заезда: <input id="appointment-in" type="date" name="date-in" value="" placeholder="24 апреля 2020">  </label> </p> 
-
-  <p> <label for="appointment-out"> Дата выезда: <input type="date" name="date-out" value="" placeholder="26 апреля 2020"> </label> </p> 
-
-<p> <label for="appointment-parents"> Взрослые: <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-  <input id="appointment-parents" name="parents" type="number" min="0" max="100" value="2" readonly>
-  <button type="button" onclick="this.previousElementSibling.stepUp()">+</button> </label> </p>
-
-  <p> <label for="appointment-children"> Дети: <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-    <input id="appointment-children" name="children" type="number" min="0" max="100" value="0" readonly>
-    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button></label></p>
-
-    <button class="search-form-button" type="submit"> Найти </button>
-
-</form> 
-</div> 
-
-</section>
-<!-- <div class="map" ><section>
-      <img src="./img/map.jpg" alt="карта">
     
-</div> -->
+  <div class="search-form-title"> 
+    <div class="search-form-title-item"><h2>Поиск Гостиницы в Седоне</h2> </div>
+  </div> 
 
-    </main>
+<div class="background-map">
+
+    <div class="search-form">
+      <form  class="appointment-form" action="https://echo.htmlacademy.ru" method="POST"> 
+
+      <p> <label for="appointment-in"> Дата заезда: <input class="appointment" id="appointment-in" type="date" name="date-in" value="" placeholder="24 апреля 2020">  </label> </p> 
+
+      <p> <label for="appointment-out"> Дата выезда: <input class="appointment" type="date" name="date-out" value="" placeholder="26 апреля 2020"> </label> </p> 
     
 
+
+    <div class="appointment-parents-children">
+      <p> <label for="appointment-parents"> Взрослые: <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+      <input id="appointment-parents" name="parents" type="number" min="0" max="100" value="2" readonly>
+      <button type="button" onclick="this.previousElementSibling.stepUp()">+</button> </label> </p>
+
+      <p> <label for="appointment-children"> Дети: <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+      <input id="appointment-children" name="children" type="number" min="0" max="100" value="0" readonly>
+      <button type="button" onclick="this.previousElementSibling.stepUp()">+</button></label></p>
+    </div>
+
+      <button class="search-form-button" type="submit"> Найти </button>
+      </form> 
+    </div> 
 
 
 <footer class="footer-main">
@@ -176,8 +174,14 @@
    <div class="html-academy-img"> <img src="img/html-academy-logo.svg.png" width="115px" height="41px" alt="лого академии"> </div>
   </a> 
 </div>
-</div>
-  </footer>
+
+  </footer> 
+  </main>
+    
+
+
+
+
 
   </body>
 </html>

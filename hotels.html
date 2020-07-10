@@ -24,27 +24,31 @@
       </nav>
 
     </header>
-    <main>
-       <div class="filter"> <form action="https://echo.htmlacademy.ru" method="GET">
+<main class="inner-main">
+  <div class="filter"> 
+  <form action="https://echo.htmlacademy.ru" method="GET">
             
-              <div class="filter-image">
-                <section class="filter-section">
-              <fieldset class="filter-fieldset">
-                    <legend>Инфраструктура</legend>
-                    <ul>
-                        <li class="filter-item"><input type="checkbox" id="pool" checked> <label for="pool"> Бассейн</label></li>
-                        <li class="filter-item"><input type="checkbox" id="parking"> <label for="parking"> Парковка </label></li>
-                        <li class="filter-item"><input type="checkbox" id="wifi"> <label for="wifi"> Wi-Fi</label></li>
-                    </ul>
-                </fieldset>
-                <fieldset class="filter-fieldset">
-                    <legend>Тип жилья</legend>
-                    <ul>
-                        <li><input type="checkbox" id="hotel" checked> <label for="hotel"> Гостиница</label></li>
-                        <li><input type="checkbox" id="motel" checked> <label for="motel"> Мотель</label></li>
-                        <li><input type="checkbox" id="apartments" checked> <label for="apartments"> Аппартаменты</label></li>
-                    </ul>
-                </fieldset>
+    
+    <section class="filter-section">
+      <div class="filter-fieldset"><fieldset class="filter-fieldset-item" >
+        <legend>Инфраструктура</legend>
+        <ul>
+          <li class="filter-item"><input type="checkbox" id="pool" checked> <label for="pool"> Бассейн</label></li>
+          <li class="filter-item"><input type="checkbox" id="parking"> <label for="parking"> Парковка </label></li>
+          <li class="filter-item"><input type="checkbox" id="wifi"> <label for="wifi"> Wi-Fi</label></li>
+        </ul>
+      </fieldset>
+    </div>
+     <div class="filter-fieldset">  <fieldset class="filter-fieldset-item">
+        <legend>Тип жилья</legend>
+        <ul>
+          <li><input type="checkbox" id="hotel" checked> <label for="hotel"> Гостиница</label></li>
+          <li><input type="checkbox" id="motel" checked> <label for="motel"> Мотель</label></li>
+          <li><input type="checkbox" id="apartments" checked> <label for="apartments"> Аппартаменты</label></li>
+        </ul>
+      </fieldset>
+     </div> 
+
                 <fieldset>
                     <legend>Стоимость в сутки (Р)</legend>
                     <label>от<input type="number" name="min-price" value="0"></label>
@@ -52,35 +56,36 @@
                     <input type="range">
                     <input type="range">
                 </fieldset>
-               
-              </div>
-            </section>        
-        </form>
-      </div>
+    </section>  
+  
+                  
+    </form>
+  </div>
 
-        <section>
-          <h2 class="visually-hidden">Результаты поиска</h2>
-          <div class="search-results">Найдено: 3</div>
-          <p>Сортировка</p>
-          <ul>
-            <li> <a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
-          </ul>
-          <ul>
-            <li>
-              <a href=""> <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
-                </svg>
-                 </a>
-            </li>
-            <li><a href="#"> <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
-              </svg>
-              </a></li>
-          </ul>
+<section class="search-results-box">
+  <div class="containter-search-results">
+  <div class="container-filter-categories"> <h2 class="visually-hidden">Результаты поиска</h2>
+    <div class="container-search-results-item">
+      <h3>Найдено: 3 </h3>
+      <p>Сортировка</p>
+  </div>
+    <div class="container-filter-categories-item">
+      <li> <a href="#">По цене</a></li>
+      <li><a href="#">По типу</a></li>
+      <li><a href="#">По рейтингу</a></li>
+    </div>
+  </div>
 
-      </section>
+<div class="container-filter-direction">
+        <div><a href=""> <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/></svg></a> </div>
+      
+      <div><a href="#"> <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.5 10L0 0H11" fill="#81B3D2"/></svg></a> </div>
+     
+  </div>
+</div>
+</section>
   
 
 <section class="hotels-list">
