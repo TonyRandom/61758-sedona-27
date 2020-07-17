@@ -534,6 +534,132 @@ text-transform: uppercase;
   }
 
 
+      /* ФОРМА */
+
+.filter-range {
+  width: 330px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  font-size: 600;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 9px;
+}
+
+.price-controls {
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+  position: relative;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input{
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.range-toogle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toogle:hover {
+  background-color: #1c4f80;
+}
+
+
+.range-toogle-min {
+  left: 0;
+}
+
+.range-toogle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .flex-price {
   
   height: 100%;
@@ -545,45 +671,69 @@ text-transform: uppercase;
 
 }
 
-.flex-price li:first-child {
 
-  color: #ffffff;
-  font-weight: bold;
+
+/* ЧЕКБОКСЫ */
+
+.flex-outer input[type="checkbox"]:checked, 
+.flex-outer input[type="checkbox"]:not(:checked) {
+
+    position: absolute;
+    left: -9999px;
 }
 
-.flex-outer-range {
-  
-  margin: 0;
-  padding: 0;
-  /* height: 200px; */
+.flex-outer input[type="checkbox"]:checked + label, 
+.flex-outer input[type="checkbox"]:not(:checked) + label {
+  display: inline-block;
+    position: relative;
+    padding-left: 43px;
+    
+    cursor: pointer;
+
+    
+}
+
+.flex-outer input[type="checkbox"]:checked + label::before,
+.flex-outer input[type="checkbox"]:not(:checked) + label::before {
+/*   content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 20px;
+  height: 20px;
+  /* border: 2px solid #ffffff;
+  border-radius: 2px; */ */
+}
+
+.flex-outer input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  
-
-/*   border: 3px solid red; */
-}
-
-.flex-price-submit {
-  color: #ffffff;
-  font-family: PTSans;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-
-  padding: 10px 35px;
-border: 2px solid #ffffff;
-background-color: transparent;
+  padding: 10px;
+  background-image: url("../img/checkbox-on.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ 
 
 }
 
+.flex-outer input[type="checkbox"]:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-image: url("../img/checkbox-off.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+ 
 
-
-
-
-
+}
   
   
 
@@ -791,4 +941,8 @@ background-color: transparent;
   text-transform: uppercase;
   padding: 5px 10px;
 }
-}
+
+
+
+
+        /* АНИМАЦИЯ КНОПОК */
