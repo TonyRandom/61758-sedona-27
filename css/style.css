@@ -49,22 +49,37 @@ header {
  margin: 0;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
-.main-navigation a {
-  text-decoration: none;
+  align-items: flex-start;
   
 }
 
-.main-navigation a {
+
+.main-navigation li:not(:nth-child(3)) a {
+  margin: 0;
+  padding:0;
+  
+  display: block;
+  padding: 14px 50px;
+ 
+  
   color: black;
   font: inherit;
   font-size: 14px;
 line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
 
 }
+
+.main-navigation .navigation a:hover {
+  color: #81b3d2;
+}
+.main-navigation .navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
 
 .main-navigation .current-page {
   color: #766357;
@@ -693,17 +708,6 @@ text-transform: uppercase;
     
 }
 
-.flex-outer input[type="checkbox"]:checked + label::before,
-.flex-outer input[type="checkbox"]:not(:checked) + label::before {
-/*   content: "";
-  position: absolute;
-  left: 0;
-  top: -1px;
-  width: 20px;
-  height: 20px;
-  /* border: 2px solid #ffffff;
-  border-radius: 2px; */ */
-}
 
 .flex-outer input[type="checkbox"]:checked + label::before {
   content: "";
@@ -731,12 +735,22 @@ text-transform: uppercase;
   background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
   background-position: 0 0;
- 
-
 }
   
-  
+/* 
+ПРОВЕРИТЬ СНИЗУ ДИЗЭЙБЛД. КАРТИНКА НЕ МОЖЕТ ПЕРЕКРАШИВАТЬСЯ */
 
+
+  
+.flex-outer .filter-item input[type="checkbox"]:disabled:not(:checked) + label::before {
+  background-image: url("../img/checkbox-off-disabled.png");
+  
+}
+
+.flex-outer .filter-item input[type="checkbox"]:disabled:checked + label::before {
+  background-image: url("../img/checkbox-on-disabled.png");
+  
+}
 
 .search-results-box {
   
