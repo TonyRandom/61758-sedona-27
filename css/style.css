@@ -713,42 +713,68 @@ text-transform: uppercase;
   content: "";
   position: absolute;
   left: 0;
-  top: -1px;
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  background-image: url("../img/checkbox-on.png");
+  /* top: -1px; */
+  /* width: 100%;
+  height: 100%; */
+  /* padding: 10px; */
+ /*  background-image: url("../img/checkbox-on.png");
   background-repeat: no-repeat;
   background-position: 0 0;
- 
-
+  */
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 
 .flex-outer input[type="checkbox"]:not(:checked) + label::before {
   content: "";
   position: absolute;
   left: 0;
-  top: -1px;
+  /* top: -1px; */
   width: 100%;
-  height: 100%;
-  padding: 10px;
-  background-image: url("../img/checkbox-off.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
   
+/* ДЕЛАЮ ГАЛКУ АФТЕРОМ */
+
+
+.flex-outer input[type="checkbox"]:checked + label::after {
+
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  border-bottom: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  left: 0;
+  top: -1px;
+  transform: rotate(-45deg) translateX(3px) translateY(5px);
+
+  
+} 
+
 /* 
 ПРОВЕРИТЬ СНИЗУ ДИЗЭЙБЛД. КАРТИНКА НЕ МОЖЕТ ПЕРЕКРАШИВАТЬСЯ */
 
 
+
+
   
 .flex-outer .filter-item input[type="checkbox"]:disabled:not(:checked) + label::before {
-  background-image: url("../img/checkbox-off-disabled.png");
+  border-color: #696969;
   
 }
 
-.flex-outer .filter-item input[type="checkbox"]:disabled:checked + label::before {
-  background-image: url("../img/checkbox-on-disabled.png");
+.flex-outer .filter-item input[type="checkbox"]:disabled:checked + label::before,
+.flex-outer .filter-item input[type="checkbox"]:disabled:checked + label::after,
+.flex-outer li .filter-item input[type="checkbox"]:disabled + label
+ {
+  border-color: #696969;
+  color: #696969;
   
 }
 
