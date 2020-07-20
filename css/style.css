@@ -85,13 +85,21 @@ line-height: 26px;
   color: #766357;
 }
 
-
-
-/* .polygon-item-1>img{
+.polygon-item-1 {
+  min-width: 1200px;
   margin: 0;
-  margin-bottom: 0;
   padding: 0;
-} */
+}
+
+.polygon-item-1>img{
+  display: block;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  
+  
+  
+} 
 
 
       /* MAIN */
@@ -847,7 +855,13 @@ text-transform: uppercase;
   border-bottom: 1px dotted #81b3d2;
 }
 
+.container-filter-inactive-link:hover {
+  color: #81b3d2;
+}
 
+.container-filter-inactive-link:active {
+  color: #000000;
+}
 
 
 .container-filter-direction {
@@ -855,9 +869,22 @@ text-transform: uppercase;
 
   display: flex;
   justify-content: space-between;
+  
 
 }
 
+.container-filter-direction-link:hover .container-filter-direction-svg {
+  fill: #000000;
+ 
+
+}
+
+.container-filter-direction-link:active .container-filter-direction-svg 
+{
+  fill: #81b3d4;
+ 
+ 
+}
 
 .hotels-list ul {
   background-color: #ffffff;
@@ -882,12 +909,25 @@ text-transform: uppercase;
   
 
   text-transform: uppercase;
-
- 
-
-
 }
 
+
+.hotels-list-item-link{
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.hotels-list-item-link:hover {
+  color: #81b3d4;
+}
+
+.hotels-list-item-link:active {
+  color: #cacaca;
+}
 
 .hotels-list-item-description {
 
@@ -966,10 +1006,20 @@ text-transform: uppercase;
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
-
-  padding: 5px 10px;
+  margin: 0;
+  padding: 0;
+  padding: 5px 17px;
+  margin-right: 6px;
 }
 
+.more-info-button:hover {
+  background-color: #669ebf;
+}
+
+.more-info-button:active {
+  background-color: #5596be;
+  color: #94b9d3;
+}
 
 .book-button {
   color: #ffffff;
@@ -979,10 +1029,20 @@ text-transform: uppercase;
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 5px 10px;
+  margin: 0;
+  padding: 0;
+  padding: 5px 17px;
 }
 
+.book-button:hover {
+  background-color: #604e44;
+}
 
+.book-button:active {
+  background-color: #503e32;
+  color: #938a83;
+
+}
 
 
         /* АНИМАЦИЯ КНОПОК */
